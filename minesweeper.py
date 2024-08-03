@@ -16,7 +16,7 @@ def generate_tiles(grid_size):
     gui = ""
     for i in range(grid_size * grid_size):
         grid.append(i)
-        if i % 8 == 0:
+        if i % grid_size == 0:
             gui = gui + "\n"
         gui = gui + " - "
     
